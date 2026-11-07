@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123b20">
+  <meta name="description" content="Ghar Ka Swad - Fresh homemade food, Assamese taste and home delivery.">
+  <title>Ghar Ka Swad | Homemade Food</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-message">
+      <span>Freshly Cooked Everyday</span>
+      <i>•</i>
+      <span>Homemade Taste</span>
+      <i>•</i>
+      <span>Home Delivery Available</span>
+    </div>
+    <div class="languages">
+      <button class="active" data-lang="en">English</button>
+      <button data-lang="hi">हिंदी</button>
+      <button data-lang="as">অসমীয়া</button>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#" class="brand">
+      <span class="brand-symbol">❋</span>
+      <span>
+        <strong>Ghar Ka Swad</strong>
+        <small>GOOD FOOD GOOD MOOD</small>
+      </span>
+    </a>
+
+    <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#home" class="active">⌂ Home</a>
+      <a href="#about">Our Kitchen</a>
+      <a href="#menu">Menu</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-right">
+      <a class="header-phone" href="tel:6901851598">
+        <span>☎</span>
+        <strong>6901851598<br>9613439883</strong>
+      </a>
+      <button class="cart-button" id="openCart">
+        🛒 Cart <b id="cartCount">0</b>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">HOMEMADE • FRESH • DELICIOUS</p>
+        <h1>Ghar ka swad,<br><em>Ghar jaisa pyar.</em></h1>
+        <div class="ornament">❋</div>
+        <p class="hero-description">
+          Homemade Food, Freshly Made with Love,<br>
+          Tasty Healthy Hygienic.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">Order Now <span>◉</span></a>
+          <a href="#menu" class="btn btn-outline">View Menu</a>
+        </div>
+
+        <div class="hero-features">
+          <div><span>♧</span> Homemade<br>Taste</div>
+          <div><span>❀</span> Fresh<br>Ingredients</div>
+          <div><span>♙</span> Hygienic<br>Kitchen</div>
+          <div><span>♧</span> On Time<br>Delivery</div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1400&q=85" alt="Home kitchen cooking">
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu-section" id="menu">
+      <div class="section-heading">
+        <div class="gamusa-decoration">〰 ❋ 〰 ❋ 〰</div>
+        <h2>Our Special Menu</h2>
+        <span class="heading-flower">❋</span>
+        <p>Freshly prepared meals for you</p>
+      </div>
+
+      <div class="menu-tools">
+        <input type="search" id="menuSearch" placeholder="Search your favourite food...">
+        <div class="menu-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="veg">Veg</button>
+          <button class="filter-btn" data-filter="nonveg">Non-Veg</button>
+        </div>
+      </div>
+
+      <div class="menu-grid">
+
+        <article class="food-card" data-category="veg">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=85" alt="Puri Sabji Combo">
+          <div class="food-info">
+            <h3>1. Puri-Sabji Combo</h3>
+            <p>4 Luchi + Aloo Tarkari/Ghugni + Achar</p>
+            <strong>₹75</strong>
+            <button class="add-cart" data-name="Puri-Sabji Combo" data-price="75">Add to Cart +</button>
+          </div>
+        </article>
+
+        <article class="food-card" data-category="veg">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=85" alt="Aloo Paratha Plate">
+          <div class="food-info">
+            <h3>2. Aloo Paratha Plate</h3>
+            <p>2 Aloo Paratha + Achar</p>
+            <strong>₹45</strong>
+            <button class="add-cart" data-name="Aloo Paratha Plate" data-price="45">Add to Cart +</button>
+          </div>
+        </article>
+
+        <article class="food-card" data-category="nonveg">
+          <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=600&q=85" alt="Egg Roll">
+          <div class="food-info">
+            <h3>3. Egg Roll</h3>
+            <p>2 Egg Paratha Roll</p>
+            <strong>₹65</strong>
+            <button class="add-cart" data-name="Egg Roll" data-price="65">Add to Cart +</button>
+          </div>
+        </article>
+
+        <article class="food-card" data-category="veg">
+          <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=85" alt="Simple Veg Thali">
+          <div class="food-info">
+            <h3>4. Simple Veg Thali</h3>
+            <p>Rice + Masoor Dal + Alu Bhaji + Salad + Papad + Achar</p>
+            <strong>₹100</strong>
+            <button class="add-cart" data-name="Simple Veg Thali" data-price="100">Add to Cart +</button>
+          </div>
+        </article>
+
+        <article class="food-card" data-category="veg">
+          <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=600&q=85" alt="Paneer Thali">
+          <div class="food-info">
+            <h3>5. Paneer Thali</h3>
+            <p>Rice + Dal + Alu Bhaji + Paneer Curry + Salad + Papad</p>
+            <strong>₹185</strong>
+            <button class="add-cart" data-name="Paneer Thali" data-price="185">Add to Cart +</button>
+          </div>
+        </article>
+
+        <article class="food-card" data-category="nonveg">
+          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=600&q=85" alt="Egg Thali">
+          <div class="food-info">
+            <h3>6. Egg Thali</h3>
+            <p>Rice + Dal + Egg Curry + 2 Eggs + Aloo Bhaji + Salad</p>
+            <strong>₹145</strong>
+            <button class="add-cart" data-name="Egg Thali" data-price="145">Add to Cart +</button>
+          </div>
+        </article>
+
+        <article class="food-card" data-category="nonveg">
+          <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?auto=format&fit=crop&w=600&q=85" alt="Fish Thali">
+          <div class="food-info">
+            <h3>7. Fish Thali</h3>
+            <p>Rice + Dal + Fish Curry + Aloo Bhaji + Achar</p>
+            <strong>₹165</strong>
+            <button class="add-cart" data-name="Fish Thali" data-price="165">Add to Cart +</button>
+          </div>
+        </article>
+
+        <article class="food-card" data-category="nonveg">
+          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=601&q=85" alt="Duck Thali">
+          <div class="food-info">
+            <h3>8. Duck Thali</h3>
+            <p>Rice + Dal + Duck Curry + Aloo Bhaji + Papad + Salad + Achar</p>
+            <strong>₹240</strong>
+            <button class="add-cart" data-name="Duck Thali" data-price="240">Add to Cart +</button>
+          </div>
+        </article>
+
+        <article class="food-card" data-category="nonveg">
+          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=602&q=85" alt="Chicken Thali">
+          <div class="food-info">
+            <h3>9. Chicken Thali</h3>
+            <p>Rice + Dal + Assamese Style Chicken Curry + Aloo Bhaji + Papad + Salad</p>
+            <strong>₹159</strong>
+            <button class="add-cart" data-name="Chicken Thali" data-price="159">Add to Cart +</button>
+          </div>
+        </article>
+
+        <article class="food-card" data-category="veg">
+          <img src="https://images.unsplash.com/photo-1626500155537-93690c24099e?auto=format&fit=crop&w=600&q=85" alt="Roti Dal Tadka Meal">
+          <div class="food-info">
+            <h3>10. Roti-Dal Tadka Meal</h3>
+            <p>4 Tawa Roti + Yellow Dal Tadka + Aloo-Gobi Bhaji + Achar</p>
+            <strong>₹95</strong>
+            <button class="add-cart" data-name="Roti-Dal Tadka Meal" data-price="95">Add to Cart +</button>
+          </div>
+        </article>
+
+        <article class="food-card" data-category="nonveg">
+          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=603&q=85" alt="Roti Chicken Meal">
+          <div class="food-info">
+            <h3>11. Roti-Chicken Meal</h3>
+            <p>4 Tawa Roti + Chicken Curry + Achar</p>
+            <strong>₹165</strong>
+            <button class="add-cart" data-name="Roti-Chicken Meal" data-price="165">Add to Cart +</button>
+          </div>
+        </article>
+
+        <article class="food-card" data-category="veg">
+          <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=600&q=85" alt="Roti Paneer Meal">
+          <div class="food-info">
+            <h3>12. Roti-Paneer Meal</h3>
+            <p>4 Tawa Roti + Paneer Curry + Achar</p>
+            <strong>₹125</strong>
+            <button class="add-cart" data-name="Roti-Paneer Meal" data-price="125">Add to Cart +</button>
+          </div>
+        </article>
+
+        <article class="food-card" data-category="nonveg">
+          <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=601&q=85" alt="Light Night Thali">
+          <div class="food-info">
+            <h3>13. Light Night Thali</h3>
+            <p>Rice + Dal + Fish Fry / Omelette + Aloo Pitika</p>
+            <strong>₹145</strong>
+            <button class="add-cart" data-name="Light Night Thali" data-price="145">Add to Cart +</button>
+          </div>
+        </article>
+
+        <article class="food-card" data-category="nonveg">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=601&q=85" alt="Mutton Thali">
+          <div class="food-info">
+            <h3>14. Mutton Thali</h3>
+            <p>Rice + Dal + Mutton Curry + Aloo Bhaji + Papad + Salad + Achar</p>
+            <strong>₹290</strong>
+            <button class="add-cart" data-name="Mutton Thali" data-price="290">Add to Cart +</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ORDER STRIP -->
+    <section class="order-strip" id="delivery">
+      <div class="delivery-icon">🛵</div>
+      <div>
+        <h2>ORDER NOW <a href="tel:6901851598">6901851598</a> / <a href="tel:9613439883">9613439883</a> <span>|</span> Home Delivery Available</h2>
+        <p>Freshly Cooked Everyday <span>|</span> REAL FOOD REAL TASTE JUST FOR YOU</p>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-section" id="about">
+      <div class="why-content">
+        <div class="section-heading">
+          <h2>Why Choose Ghar Ka Swad?</h2>
+          <span class="heading-flower">❋</span>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card">
+            <span>♧</span>
+            <h3>Homemade Food</h3>
+            <p>Cooked with love like home.</p>
+          </article>
+          <article class="why-card">
+            <span>❋</span>
+            <h3>Fresh & Healthy</h3>
+            <p>We use fresh ingredients daily.</p>
+          </article>
+          <article class="why-card">
+            <span>♙</span>
+            <h3>Hygienic Kitchen</h3>
+            <p>Maintained with clean & safe practices.</p>
+          </article>
+          <article class="why-card">
+            <span>♧</span>
+            <h3>On Time Delivery</h3>
+            <p>Your food delivered hot & on time.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="review-highlight" id="reviews">
+        <div class="review-copy">
+          <h2>What Our Customers Say</h2>
+          <span class="heading-flower">❋</span>
+          <p class="review-note">Customer reviews coming soon.</p>
+          <p>We would love to hear about your experience with Ghar Ka Swad!</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=700&q=85" alt="Homemade Indian thali">
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <div class="footer-column">
+        <h3>About Ghar Ka Swad</h3>
+        <p>We are a home kitchen that believes in serving delicious, healthy and hygienic food made with love.</p>
+        <p>Thank you for supporting us!</p>
+        <a href="https://instagram.com/robina_kitchen312" target="_blank" rel="noopener">◎ robina_kitchen312</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#about">Our Kitchen</a>
+        <a href="#menu">Our Menu</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <a href="tel:6901851598">☎ 6901851598</a>
+        <a href="tel:9613439883">☎ 9613439883</a>
+        <a href="https://instagram.com/robina_kitchen312" target="_blank" rel="noopener">◎ robina_kitchen312</a>
+        <p>Home Delivery Available</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <p>Follow us on Instagram for latest updates, daily specials and behind the scenes.</p>
+        <a class="instagram-button" href="https://instagram.com/robina_kitchen312" target="_blank" rel="noopener">◎ Follow on Instagram</a>
+      </div>
+    </footer>
+
+    <div class="copyright">
+      <span>© 2026 Ghar Ka Swad. All Rights Reserved.</span>
+      <span>Made with ❤️ for Food Lovers</span>
+    </div>
+  </main>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCart" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <p class="empty-cart">Your cart is empty.</p>
+    </div>
+    <div class="cart-total">
+      <strong>Total</strong>
+      <strong id="cartTotal">₹0</strong>
+    </div>
+    <button class="btn btn-primary checkout-button" id="checkoutButton">Proceed to Order</button>
+  </aside>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="checkout-modal">
+      <button class="modal-close" id="closeCheckout" aria-label="Close">✕</button>
+      <h2>Complete Your Order</h2>
+      <p>Enter your delivery details below.</p>
+
+      <form id="checkoutForm">
+        <label for="customerName">Your Name</label>
+        <input id="customerName" name="name" type="text" required placeholder="Enter your name">
+
+        <label for="customerPhone">Phone Number</label>
+        <input id="customerPhone" name="phone" type="tel" required pattern="[0-9]{10}" placeholder="10-digit mobile number">
+
+        <label for="customerAddress">Delivery Address</label>
+        <textarea id="customerAddress" name="address" required placeholder="Enter your complete address"></textarea>
+
+        <label for="orderNote">Special Instructions (Optional)</label>
+        <textarea id="orderNote" name="note" placeholder="Any special request?"></textarea>
+
+        <button class="btn btn-primary" type="submit">Send Order on WhatsApp</button>
+      </form>
+      <small class="delivery-disclaimer">Delivery areas, timings and charges will be confirmed by the kitchen.</small>
+    </div>
+  </div>
+
+<a href="#menu" class="floating-order" id="floatingOrder">
+  <span>☏</span> WhatsApp Order
+</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
